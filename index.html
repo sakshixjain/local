@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
     
     
     <title>Hero Section</title>
@@ -15,18 +16,68 @@
      
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
+    .column {
+	margin: 15px 15px 0;
+	padding: 0;
+}
+button {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+    /* Shine */
+.hover14 button {
+	position: relative;
+}
+.hover14 button::before {
+	position: absolute;
+	top: 0;
+	left: -75%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 10%;
+	height: 100%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, #ffff 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, #fff 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.hover14 button:hover::before {
+	-webkit-animation: shine 1s;
+	animation: shine 1s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
 </style>
 </head>
 <body
 >
     <!-- Navigation Bar -->
     <header>
-        <h2 style="text-align: center; color: rgb(148, 218, 18); background-color: black; top: 0; padding: 10px; font-weight:bold;" >KING KONG</h2>
+        <img src="main logo svg image.svg" alt="img" class="logo text-center text-[rgb(148, 218, 18)] bg-[#e6795c] font-bold h-32 w-full"></h2>
     </header>
-<div style="background-color:rgb(139, 134, 134);">
+<div style="background-color:#e6795c">
     <!-- Hero Section 1 -->
     <section>
-        <div style="padding-top: 90px; justify-content: center; text-align: center; ">
+        <div style="padding-top: 50px; justify-content: center; text-align: center; ">
             <p style="background-color: rgb(51, 48, 48); color: white; padding: 10px; font-size: 18px; display: inline; border-radius: 20px; padding-left: 25px; letter-spacing: 0.1rem; padding-right: 25px;">
                 <span style="color: red; font-size: 30px; ">&#9679; &nbsp;</span> AN OPEN LETTER TO EVERY BUSINESS OWNER RUNNING FACEBOOK ADS
             </p>
@@ -42,15 +93,18 @@
 
     <!-- Hero Section 2 -->
     <section>
-        <div style="text-align:center; justify-content:center;">
+        <div style="text-align:center; justify-content:center; ">
             <!-- Image section -->
-            <img src="free-report-11-steps-to-facebook.png" alt="11 Steps to Make Facebook Ads Work Profitably" style="height: 420px; width: 330px; ">
+            <img src="free-report-11-steps-to-facebook.png" alt="11 Steps to Make Facebook Ads Work Profitably" style="height: 420px; width: 330px; display: inline-block;">
         </div>
-        <div style="justify-content: center; text-align: center;">
-              <button style="font-size: 35px; color: white; background-color: #41729f; display: inline; padding: 10px; padding-left: 20px; padding-right: 20px; outline: none; border: none; border-radius: 10px; margin: 50px;">
+     
+        <div style="justify-content: center; text-align: center;" class="hover14 column">
+             
+              <button style="font-size: 35px; color: white; background-color: #41729f; display: inline; padding: 10px; padding-left: 20px; padding-right: 20px; outline: none; border: none; border-radius: 10px; margin: 50px;" >
                 SEND ME MY FREE REPORT NOW <br>
                 <span style="color: rgb(59, 59, 59); font-size: 20px;">(Get for free what has cost us millions to find out)</span>
             </button></div>
+            
     </section>
     </div>
     <!-- Hero Section 3 (Logos and Message Section) -->
@@ -103,7 +157,7 @@
     <p>It’s a fast, easy-to-read report packed with sales-exploding strategies you can immediately take action on.</p>
     <p>So go ahead, get your hot little hands on what has cost us millions to figure out… and what others have paid thousands to receive.</p>
     </div>
-    <div style="justify-content: center; text-align: center;">
+    <div style="justify-content: center; text-align: center;" class="hover14 column">
         <button style="font-size: 35px; color: white; background-color: #41729f; display: inline; padding: 10px; padding-left: 20px; padding-right: 20px; outline: none; border: none; border-radius: 10px; margin: 50px;">
           SEND ME MY FREE REPORT NOW <br>
           <span style="color: rgb(59, 59, 59); font-size: 20px;">(Get for free what has cost us millions to find out)</span>
@@ -125,7 +179,7 @@
 <li>And much, much more!</li>
 
 </div>
-<div style="justify-content: center; text-align: center;">
+<div style="justify-content: center; text-align: center;" class="hover14 column">
     <button style="font-size: 35px; color: white; background-color: #41729f; display: inline; padding: 10px; padding-left: 20px; padding-right: 20px; outline: none; border: none; border-radius: 10px; margin: 50px;">
       SEND ME MY FREE REPORT NOW <br>
       <span style="color: rgb(59, 59, 59); font-size: 20px;">(Get for free what has cost us millions to find out)</span>
@@ -156,9 +210,9 @@ And have collected — like beautiful butterflies — the most powerful techniqu
  <section>
     <div style="text-align:center; justify-content:center;">
         <!-- Image section -->
-        <img src="free-report-11-steps-to-facebook.png" alt="11 Steps to Make Facebook Ads Work Profitably" style="height: 420px; width: 330px; ">
+        <img src="free-report-11-steps-to-facebook.png" alt="11 Steps to Make Facebook Ads Work Profitably" style="height: 420px; width: 330px; display: inline-block;">
     </div>
-    <div style="justify-content: center; text-align: center;">
+    <div style="justify-content: center; text-align: center;" class="hover14 column">
           <button style="font-size: 35px; color: white; background-color: #41729f; display: inline; padding: 10px; padding-left: 20px; padding-right: 20px; outline: none; border: none; border-radius: 10px; margin: 50px;">
             SEND ME MY FREE REPORT NOW <br>
             <span style="color: rgb(59, 59, 59); font-size: 20px;">(Get for free what has cost us millions to find out)</span>
