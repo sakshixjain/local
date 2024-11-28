@@ -5,68 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     
     
     <title>Hero Section</title>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-     
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    .column {
-	margin: 15px 15px 0;
-	padding: 0;
-}
-button {
-	margin: 0;
-	padding: 0;
-	background: #fff;
-	overflow: hidden;
-}
-.column:last-child {
-	padding-bottom: 60px;
-}
-.column::after {
-	content: '';
-	clear: both;
-	display: block;
-}
-    /* Shine */
-.hover14 button {
-	position: relative;
-}
-.hover14 button::before {
-	position: absolute;
-	top: 0;
-	left: -75%;
-	z-index: 2;
-	display: block;
-	content: '';
-	width: 10%;
-	height: 100%;
-	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, #ffff 100%);
-	background: linear-gradient(to right, rgba(255,255,255,0) 0%, #fff 100%);
-	-webkit-transform: skewX(-25deg);
-	transform: skewX(-25deg);
-}
-.hover14 button:hover::before {
-	-webkit-animation: shine 1s;
-	animation: shine 1s;
-}
-@-webkit-keyframes shine {
-	100% {
-		left: 125%;
-	}
-}
-@keyframes shine {
-	100% {
-		left: 125%;
-	}
-}
-</style>
+
 </head>
 <body
 >
@@ -112,13 +55,13 @@ button {
         <div>
             <!-- Logos Section -->
             <div style="background-color: rgb(223, 219, 212); ">
-                <img style="width: 970px; align-items: center; justify-content: center; margin: 50px; margin-left: 190px;" src="as-seen-in-small.svg" alt="Forbes">
+                <img style="width: 970px; align-items: center; justify-content: center; padding: 20px; margin-left: 190px;" src="as-seen-in-small.svg" alt="Forbes">
                
             </div>
-
+</div>
             <!-- Text Section -->
-            
-            <div class="col-xxl-7 col-xl-8 col-md-9 " style="  text-align: center; font-size: 22px; line-height:38px;">
+        
+            <div class=" col-xl-8 col-lg-9 col-xxl-7" style=" text-align: left;  justify-content: center; font-size: 22px; line-height:38px;">
                 <p><strong class="date-updated">Updated: 18th of November, 2024</strong></p>
         <p>Dear Business Builder,</p>
         <p>If you would like to know the fastest, simplest, and most certain way to get as many customers as possible using Facebook Ads…</p>
@@ -163,6 +106,39 @@ button {
           <span style="color: rgb(59, 59, 59); font-size: 20px;">(Get for free what has cost us millions to find out)</span>
       </button></div>
 
+<div style="margin: 90px;">
+    <p style="text-align: center; justify-content: center; font-size: 20px; padding: 50px;">AS FEATURED IN</p>
+    <div  class="image-gallery-container">
+    <div class="image-gallery">
+    <div class="image-item">
+    <img src="/images/featured-in-row-1.svg" alt="">
+    <img src="/images/featured-in-row-1.svg" alt="">
+    <img src="/images/featured-in-row-1.svg" alt="">
+    </div>
+    </div>
+</div>
+<div  class="image-gallery-container1">
+    <div class="image-gallery1">
+    <div class="image-item1 ">
+
+    <img src="/images/featured-in-row-2.svg" alt="" >
+    <img src="/images/featured-in-row-2.svg" alt="" >
+    <img src="/images/featured-in-row-2.svg" alt="" >
+    </div>
+    </div>
+</div>
+<div  class="image-gallery-container">
+    <div class="image-gallery">
+    <div class="image-item ">
+        <img src="/images/featured-in-row-3.svg" alt="">
+    <img src="/images/featured-in-row-3.svg" alt="">
+    <img src="/images/featured-in-row-3.svg" alt="">
+
+    </div>
+    </div>
+</div>
+</div>
+
       <span style="text-align: center; font-size: 55px; font-weight: bolder; ">
         
         Here’s Just A Fraction Of What You’ll Discover Inside This Free Report...        
@@ -206,6 +182,7 @@ And have collected — like beautiful butterflies — the most powerful techniqu
     Download Your Free Report Now Before This Page Comes Down        
 </span>
 
+
  <!-- Hero Section 2 -->
  <section>
     <div style="text-align:center; justify-content:center;">
@@ -218,7 +195,7 @@ And have collected — like beautiful butterflies — the most powerful techniqu
             <span style="color: rgb(59, 59, 59); font-size: 20px;">(Get for free what has cost us millions to find out)</span>
         </button></div>
 </section>
-        </div>
+    
     </section>
 </body>
 </html>
